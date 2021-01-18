@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Петр Зуйков](https://up.htmlacademy.ru/htmlcss/30/user/1709901).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://up.htmlacademy.ru/htmlcss/30/user/5608).
 
 ---
 
