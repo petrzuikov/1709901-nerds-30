@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="favicon-32.ico">
@@ -7,31 +7,34 @@
     <link rel="apple-touch-icon" href="favicon-180.jpg">
     <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" width="160" height="65" alt="Логотип компании">
+          <img src="img/logo.svg" class="logo" width="160" height="65" alt="Логотип компании">
+          <img src="img/logo-active.svg" class="active-logo" width="160" height="65" alt="Логотип компании">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">СТУДИЯ</a></li>
-          <li><a href="#">КЛИЕНТЫ</a></li>
-          <li><a href="catalog.html">МАГАЗИН</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
+          <li><a href="#">студия</a></li>
+          <li><a href="#">клиенты</a></li>
+          <li><a href="catalog.html">магазин</a></li>
+          <li><a href="#">контакты</a></li>
         </ul>
-        <ul>
-          <li><img src="img/cart-icon.svg" width="15" height="11" alt=""><a href="#">КОРЗИНА</a></li>
+        <ul class="cart">
+          <li><img src="img/cart-icon.svg" width="15" height="11" alt=""><a class="cart-link" href="#">КОРЗИНА</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>Магазин готовых шаблонов</h1>
-      <section>
-        <h2 hidden>Фильтр</h2>
-        <form method="post" action="https://echo.htmlacademy.ru">
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="cost">
-            <legend class="caption">СТОИМОСТЬ:</legend>
+            <legend class="caption">стоимость:</legend>
             <input type="range" name="range" value="0" max="15000" class="field-range">
             <label>
               ОТ<input type="number" name="from" value="0" class="field-number">
@@ -41,7 +44,7 @@
             </label>
           </fieldset>
           <fieldset class="grid">
-            <legend class="caption">СЕТКА:</legend>
+            <legend class="caption">сетка:</legend>
             <ul>
               <li>
                 <label>
@@ -61,7 +64,7 @@
             </ul>
           </fieldset>
           <fieldset class="features">
-            <legend class="caption">ОСОБЕННОСТИ:</legend>
+            <legend class="caption">особенности:</legend>
             <ul>
                 <li>
                   <label>
@@ -93,88 +96,88 @@
           <button type="submit" class="btn">Показать</button>
         </form>
       </section>
-      <section>
-        <h2 hidden>Каталог</h2>
-        <div class="sort">
-          <h3 class="caption-sort">СОРТИРОВАТЬ:</h3>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+        <div class="sort-block">
+          <h3 class="caption-sort">сортировать:</h3>
           <ul>
             <li>
-              <button type="button">ПО ЦЕНЕ</button>
+              <button type="button">по цене</button>
             </li>
             <li>
-              <button type="button">ПО ТИПУ</button>
+              <button type="button">по типу</button>
             </li>
             <li>
-              <button type="button">ПО НАЗВАНИЮ</button>
+              <button type="button">по названию</button>
             </li>
           </ul>
-          <button type="button" class="btn-down"></button>
-          <button type="button" class="btn-up"></button>
+          <button type="button" class="btn btn-down"></button>
+          <button type="button" class="btn btn-up"></button>
         </div>
-        <div class="catalog">
+        <div class="catalog-block">
           <ul>
             <li class="card-block">
               <img src="img/sedona-card.jpg" width="358" height="578" alt="Макет веб-сайта города Sedona">
               <div class="hover-block">
-                <a href="#"><h3 class="caption">SEDONA</h3></a>
+                <a href="#"><h3 class="caption">sedona</h3></a>
                 <p>Информационный сайт для туристов</p>
-                <button type="button" class="btn-buy">9 900 &#8381;</button>
+                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
               </div>
             </li>
             <li class="card-block">
               <img src="img/pink-card.jpg" width="358" height="578" alt="Макет продуктового лендинга приложения Pink">
               <div class="hover-block">
-                <a href="#"><h3 class="caption">PINK APP</h3></a>
+                <a href="#"><h3 class="caption">pink app</h3></a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button type="button" class="btn-buy">9 900 &#8381;</button>
+                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
               </div>
             </li>
             <li class="card-block">
               <img src="img/borodinski-card.jpg" width="358" height="578" alt="Макет веб-сайта барбершопа Borodinski">
               <div class="hover-block">
-                <a href="#"><h3 class="caption">BARBERSHOP</h3></a>
+                <a href="#"><h3 class="caption">barbershop</h3></a>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                <button type="button" class="btn-buy">9 900 &#8381;</button>
+                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
               </div>
             </li>
             <li class="card-block">
               <img src="img/mishka-card.jpg" width="358" height="578" alt="Макет веб-сайта интернет-магазина вязаных игрушек Mishka">
               <div class="hover-block">
-                <a href="#"><h3 class="caption">MISHKA</h3></a>
+                <a href="#"><h3 class="caption">mishka</h3></a>
                 <p>Интернет-магазин вязаных игрушек</p>
-                <button type="button" class="btn-buy">9 900 &#8381;</button>
+                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
               </div>
             </li>
             <li class="card-block">
               <img src="img/aplus-card.jpg" width="358" height="578" alt="Макет ленидинга курсов повышения квалификации А+">
               <div class="hover-block">
-                <a href="#"><h3 class="caption">A PLUS</h3></a>
+                <a href="#"><h3 class="caption">a plus</h3></a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <button type="button" class="btn-buy">9 900 &#8381;</button>
+                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
               </div>
             </li>
             <li class="card-block">
               <img src="img/kvast-card.jpg" width="358" height="578" alt="Макет промо-сайта прозиводителя крафтового кваса Кваст">
               <div class="hover-block">
-                <a href="#"><h3 class="caption">КВАСТ</h3></a>
+                <a href="#"><h3 class="caption">кваст</h3></a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <button type="button" class="btn-buy">9 900 &#8381;</button>
+                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
               </div>
             </li>
           </ul>
           <nav class="page-navigation">
             <ul class="pagination">
               <li>
-                <a class="btn-pagination">1</a>
+                <a class="btn btn-pagination">1</a>
               </li>
               <li>
-                <a class="btn-pagination">2</a>
+                <a class="btn btn-pagination">2</a>
               </li>
               <li>
-                <a href="#" class="btn-pagination">3</a>
+                <a href="#" class="btn btn-pagination">3</a>
               </li>
               <li>
-                <a href="#" class="btn">Следующая</a>
+                <a href="#" class="btn btn-pagination">Следующая</a>
               </li>
             </ul>
           </nav>
@@ -182,24 +185,24 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="contacts">
-        <h2 hidden>Контактные данные</h2>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контактные данные</h2>
         <address>
-          <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a href="#">НАПИШИТЕ НАМ</a>
+          <p class="contacts-title">nёrds design studio</p>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="btn btn-contact" href="#">напишите нам</a>
         </address>
       </section>
-      <section class="social">
-        <h2 hidden>Социальные сети</h2>
-        <ul>
-          <li><a href="#"><img src="img/vk-icon.svg" width="26.01" height="15" alt="Nerds во ВКонтакте"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Nerds в Facebook"></a></li>
-          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Nerds в Instagram"></a></li>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-pages">
+          <li class="social-page1"><a class="btn-social" href="#"><img src="img/vk-icon.svg" class="social-icon" width="26.01" height="15" alt="Nerds во ВКонтакте"></a></li>
+          <li class="social-page2"><a class="btn-social" href="#"><img src="img/fb-icon.svg" class="social-icon" width="12" height="22" alt="Nerds в Facebook"></a></li>
+          <li class="social-page3"><a class="btn-social" href="#"><img src="img/insta-icon.svg" class="social-icon" width="21" height="21" alt="Nerds в Instagram"></a></li>
         </ul>
         <p class="social-title">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <p class="social-info">Скидка 10% для друзей из социальных сетей</p>
       </section>
     </footer>
   </body>
