@@ -10,26 +10,25 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body">
+  <body class="body catalog-body">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
           <img src="img/logo.svg" class="logo" width="160" height="65" alt="Логотип компании">
-          <img src="img/logo-active.svg" class="active-logo" width="160" height="65" alt="Логотип компании">
         </a>
         <ul class="site-navigation">
           <li><a href="#">студия</a></li>
           <li><a href="#">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
+          <li><a href="catalog.html" class="catalog-page-active">магазин</a></li>
           <li><a href="#">контакты</a></li>
         </ul>
         <ul class="cart">
-          <li><img src="img/cart-icon.svg" width="15" height="11" alt=""><a class="cart-link" href="#">КОРЗИНА</a></li>
+          <li><a class="cart-link" href="#"><img src="img/cart-icon.svg" width="15" height="11" alt="">КОРЗИНА</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
@@ -93,16 +92,16 @@
                 </li>
             </ul>
           </fieldset>
-          <button type="submit" class="btn">Показать</button>
+          <button type="submit" class="btn btn-show">Показать</button>
         </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <div class="sort-block">
-          <h3 class="caption-sort">сортировать:</h3>
-          <ul>
+          <h3 class="caption">сортировать:</h3>
+          <ul class="sort-list">
             <li>
-              <button type="button">по цене</button>
+              <button type="button">По цене</button>
             </li>
             <li>
               <button type="button">по типу</button>
@@ -111,8 +110,12 @@
               <button type="button">по названию</button>
             </li>
           </ul>
-          <button type="button" class="btn btn-down"></button>
-          <button type="button" class="btn btn-up"></button>
+          <button type="button" class="btn btn-down">
+            <img src="/img/btn-down-hover.svg" width="11" height="10" alt="">
+          </button>
+          <button type="button" class="btn btn-up">
+            <img src="/img/btn-up-hover.svg" width="11" height="10" alt="">
+          </button>
         </div>
         <div class="catalog-block">
           <ul>
@@ -168,10 +171,10 @@
           <nav class="page-navigation">
             <ul class="pagination">
               <li>
-                <a class="btn btn-pagination">1</a>
+                <a href="#" class="btn btn-pagination btn-active">1</a>
               </li>
               <li>
-                <a class="btn btn-pagination">2</a>
+                <a href="#" class="btn btn-pagination">2</a>
               </li>
               <li>
                 <a href="#" class="btn btn-pagination">3</a>
@@ -197,9 +200,9 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-pages">
-          <li class="social-page1"><a class="btn-social" href="#"><img src="img/vk-icon.svg" class="social-icon" width="26.01" height="15" alt="Nerds во ВКонтакте"></a></li>
-          <li class="social-page2"><a class="btn-social" href="#"><img src="img/fb-icon.svg" class="social-icon" width="12" height="22" alt="Nerds в Facebook"></a></li>
-          <li class="social-page3"><a class="btn-social" href="#"><img src="img/insta-icon.svg" class="social-icon" width="21" height="21" alt="Nerds в Instagram"></a></li>
+          <li class="social-page-vk"><a class="btn-social" href="#"><img src="img/vk-icon.svg" class="social-icon" width="26.01" height="15" alt="Nerds во ВКонтакте"></a></li>
+          <li class="social-page-fb"><a class="btn-social" href="#"><img src="img/fb-icon.svg" class="social-icon" width="12" height="22" alt="Nerds в Facebook"></a></li>
+          <li class="social-page-insta"><a class="btn-social" href="#"><img src="img/insta-icon.svg" class="social-icon" width="21" height="21" alt="Nerds в Instagram"></a></li>
         </ul>
         <p class="social-title">Давайте дружить, это выгодно!</p>
         <p class="social-info">Скидка 10% для друзей из социальных сетей</p>
