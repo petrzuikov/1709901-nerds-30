@@ -27,82 +27,92 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Интернет магазин «Nerds»</h1>
       <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slides">
-          <div class="slide">
-            <p class="slogan">Долго, дорого, скрупулезно.</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="btn btn-slide" href="#">узнать больше</a>
+        <div class="container">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slides">
+            <div class="slide slide-smartphone">
+              <p class="slogan">Долго, дорого, скрупулезно.</p>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="btn btn-slide" href="#">узнать больше</a>
+            </div>
+            <div class="slide slide-computer">
+              <p class="slogan">Любим математику как никто другой</p>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+              <a class="btn btn-slide" href="#">узнать больше</a>
+            </div>
+            <div class="slide slide-tablet">
+              <p class="slogan">Только ночь, только хардкор</p>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="btn btn-slide" href="#">узнать больше</a>
+            </div>
           </div>
-          <div class="slide">
-            <p class="slogan">Любим математику как никто другой</p>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a class="btn btn-slide" href="#">узнать больше</a>
+          <input type="radio" name="point" id="slide1" checked>
+	        <input type="radio" name="point" id="slide2">
+          <input type="radio" name="point" id="slide3">
+          <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
           </div>
-          <div class="slide">
-            <p class="slogan">Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="btn btn-slide" href="#">узнать больше</a>
-          </div>
-        </div>
-        <input type="radio" name="point" id="slide1" checked>
-	      <input type="radio" name="point" id="slide2">
-        <input type="radio" name="point" id="slide3">
-        <div class="controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
         </div>
       </section>
-      <section class="services">
+      <section class="services container">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
-          <li class="service-item">
+          <li class="service-item service-item-web">
             <h3>веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
             <a class="btn service-link-orange" href="#">заказать</a>
           </li>
-          <li class="service-item">
+          <li class="service-item service-item-apps">
             <h3>приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="btn service-link-green" href="#">заказать</a>
           </li>
-          <li class="service-item">
+          <li class="service-item service-item-presentations">
             <h3>презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="btn service-link-yellow" href="#">заказать</a>
           </li>
         </ul>
       </section>
-      <section class="about">
+      <section class="about container">
         <h2 class="visually-hidden">О нас</h2>
-        <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работая не покладая рук, как роботы</p>
-        <p class="about-subtitle">выполняем заказы на разработку:</p>
-        <ul class="about-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <img src="img/about-logo.png" width="360" height="208" alt="Логотип компании">
-        <p class="about-subtitle about-subtitle-features">с 2004 года любим точность во всем:</p>
-        <table class="features-table">
-          <tr>
-            <td>146<span class="percent-sign">%</span></td>
-            <td>100<span class="percent-sign">%</span></td>
-            <td>50<span class="percent-sign">%</span></td>
-          </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
+        <div class="about-description">
+          <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работая не покладая рук, как роботы</p>
+        </div>
+        <div class="about-services">
+          <p class="about-subtitle">выполняем заказы на разработку:</p>
+          <ul class="about-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-logo">
+          <img src="img/about-logo.png" width="360" height="208" alt="Логотип компании">
+        </div>
+        <div class="about-features">
+          <p class="about-subtitle about-subtitle-features">с 2004 года любим точность во всем:</p>
+          <table class="features-table">
+            <tr>
+              <td>146<span class="percent-sign">%</span></td>
+              <td>100<span class="percent-sign">%</span></td>
+              <td>50<span class="percent-sign">%</span></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
       </section>
-      <section class="companies">
+      <section class="companies container">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="companies-list">
           <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="HTML Academy"></a></li>
@@ -112,7 +122,7 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контактные данные</h2>
         <address>
@@ -129,8 +139,10 @@
           <li class="social-page-fb"><a class="btn-social" href="#"><img src="img/fb-icon.svg" class="social-icon" width="12" height="22" alt="Nerds в Facebook"></a></li>
           <li class="social-page-insta"><a class="btn-social" href="#"><img src="img/insta-icon.svg" class="social-icon" width="21" height="21" alt="Nerds в Instagram"></a></li>
         </ul>
-        <p class="social-title">Давайте дружить, это выгодно!</p>
-        <p class="social-info">Скидка 10% для друзей из социальных сетей</p>
+        <div class="social-info-container">
+          <p class="social-title">Давайте дружить, это выгодно!</p>
+          <p class="social-info">Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </section>
     </footer>
   </body>

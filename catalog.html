@@ -27,167 +27,177 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр</h2>
-        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="cost">
-            <legend class="caption">стоимость:</legend>
-            <input type="range" name="range" value="0" max="15000" class="field-range">
-            <label>
-              ОТ<input type="number" name="from" value="0" class="field-number">
-            </label>
-            <label>
-              ДО<input type="number" name="to" value="15 000" class="field-number">
-            </label>
-          </fieldset>
-          <fieldset class="grid">
-            <legend class="caption">сетка:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio" name="radio" value="adaptive" class="field-radio" checked>Адаптивная
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="radio" value="fixed" class="field-radio">Фиксированная
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="radio" value="rubber" class="field-radio">Резиновая
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="features">
-            <legend class="caption">особенности:</legend>
-            <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="slider" class="field-checkbox" checked>Слайдер
-                  </label>
-                </li>
-                <li>
-                <label>
-                  <input type="checkbox" name="features block" class="field-checkbox">Блок преимуществ
-                </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="news" class="field-checkbox" Checked>Новости
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="gallery" class="field-checkbox">Галерея
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="basket" class="field-checkbox">Корзина
-                  </label>
-                </li>
-            </ul>
-          </fieldset>
-          <button type="submit" class="btn btn-show">Показать</button>
-        </form>
-      </section>
-      <section class="catalog">
-        <h2 class="visually-hidden">Каталог</h2>
-        <div class="sort-block">
-          <h3 class="caption">сортировать:</h3>
-          <ul class="sort-list">
-            <li>
-              <button type="button">По цене</button>
-            </li>
-            <li>
-              <button type="button">по типу</button>
-            </li>
-            <li>
-              <button type="button">по названию</button>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-down">
-            <img src="/img/btn-down-hover.svg" width="11" height="10" alt="">
-          </button>
-          <button type="button" class="btn btn-up">
-            <img src="/img/btn-up-hover.svg" width="11" height="10" alt="">
-          </button>
+    <main>
+      <div class="catalog-heading-container">
+        <div class="container">
+          <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
         </div>
-        <div class="catalog-block">
-          <ul>
-            <li class="card-block">
-              <img src="img/sedona-card.jpg" width="358" height="578" alt="Макет веб-сайта города Sedona">
-              <div class="hover-block">
-                <a href="#"><h3 class="caption">sedona</h3></a>
-                <p>Информационный сайт для туристов</p>
-                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
-              </div>
-            </li>
-            <li class="card-block">
-              <img src="img/pink-card.jpg" width="358" height="578" alt="Макет продуктового лендинга приложения Pink">
-              <div class="hover-block">
-                <a href="#"><h3 class="caption">pink app</h3></a>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
-              </div>
-            </li>
-            <li class="card-block">
-              <img src="img/borodinski-card.jpg" width="358" height="578" alt="Макет веб-сайта барбершопа Borodinski">
-              <div class="hover-block">
-                <a href="#"><h3 class="caption">barbershop</h3></a>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
-                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
-              </div>
-            </li>
-            <li class="card-block">
-              <img src="img/mishka-card.jpg" width="358" height="578" alt="Макет веб-сайта интернет-магазина вязаных игрушек Mishka">
-              <div class="hover-block">
-                <a href="#"><h3 class="caption">mishka</h3></a>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
-              </div>
-            </li>
-            <li class="card-block">
-              <img src="img/aplus-card.jpg" width="358" height="578" alt="Макет ленидинга курсов повышения квалификации А+">
-              <div class="hover-block">
-                <a href="#"><h3 class="caption">a plus</h3></a>
-                <p>Лендинг курсов повышения квалификации</p>
-                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
-              </div>
-            </li>
-            <li class="card-block">
-              <img src="img/kvast-card.jpg" width="358" height="578" alt="Макет промо-сайта прозиводителя крафтового кваса Кваст">
-              <div class="hover-block">
-                <a href="#"><h3 class="caption">кваст</h3></a>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <button type="button" class="btn btn-buy">9 900 &#8381;</button>
-              </div>
-            </li>
-          </ul>
-          <nav class="page-navigation">
-            <ul class="pagination">
+      </div>
+      <div class="container catalog-container">
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="cost">
+              <legend class="caption">стоимость:</legend>
+              <input type="range" name="range" value="0" max="15000" class="field-range">
+              <label>
+                ОТ<input type="number" name="from" value="0" class="field-number">
+              </label>
+              <label>
+                ДО<input type="number" name="to" value="15 000" class="field-number">
+              </label>
+            </fieldset>
+            <fieldset class="grid">
+              <legend class="caption">сетка:</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input type="radio" name="radio" value="adaptive" class="field-radio" checked>Адаптивная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="radio" value="fixed" class="field-radio">Фиксированная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="radio" value="rubber" class="field-radio">Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="features">
+              <legend class="caption">особенности:</legend>
+              <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="slider" class="field-checkbox" checked>Слайдер
+                    </label>
+                  </li>
+                  <li>
+                  <label>
+                    <input type="checkbox" name="features block" class="field-checkbox">Блок преимуществ
+                  </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="news" class="field-checkbox" Checked>Новости
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="gallery" class="field-checkbox">Галерея
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="basket" class="field-checkbox">Корзина
+                    </label>
+                  </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="btn btn-show">Показать</button>
+          </form>
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог</h2>
+          <div class="sort-block">
+            <h3 class="caption">сортировать:</h3>
+            <ul class="sort-list">
               <li>
-                <a href="#" class="btn btn-pagination btn-active">1</a>
+                  <button type="button">По цене</button>
               </li>
               <li>
-                <a href="#" class="btn btn-pagination">2</a>
+                  <button type="button">по типу</button>
               </li>
               <li>
-                <a href="#" class="btn btn-pagination">3</a>
-              </li>
-              <li>
-                <a href="#" class="btn btn-pagination">Следующая</a>
+                  <button type="button">по названию</button>
               </li>
             </ul>
-          </nav>
-        </div>
-      </section>
+            <button type="button" class="btn btn-down">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#A6A6A6"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-up">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+              </svg>
+            </button>
+          </div>
+          <div class="catalog-block">
+            <ul class="catalog-list">
+              <li class="card-block">
+                <img src="img/sedona-card.jpg" width="358" height="578" alt="Макет веб-сайта города Sedona">
+                <div class="hover-block">
+                  <a href="#"><h3 class="caption">sedona</h3></a>
+                  <p>Информационный сайт для туристов</p>
+                  <button type="button" class="btn btn-buy">9 900 &#8381;</button>
+                </div>
+              </li>
+              <li class="card-block">
+                <img src="img/pink-card.jpg" width="358" height="578" alt="Макет продуктового лендинга приложения Pink">
+                <div class="hover-block">
+                  <a href="#"><h3 class="caption">pink app</h3></a>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <button type="button" class="btn btn-buy">9 900 &#8381;</button>
+                </div>
+              </li>
+              <li class="card-block">
+                <img src="img/borodinski-card.jpg" width="358" height="578" alt="Макет веб-сайта барбершопа Borodinski">
+                <div class="hover-block">
+                  <a href="#"><h3 class="caption">barbershop</h3></a>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <button type="button" class="btn btn-buy">9 900 &#8381;</button>
+                </div>
+              </li>
+              <li class="card-block">
+                <img src="img/mishka-card.jpg" width="358" height="578" alt="Макет веб-сайта интернет-магазина вязаных игрушек Mishka">
+                <div class="hover-block">
+                  <a href="#"><h3 class="caption">mishka</h3></a>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <button type="button" class="btn btn-buy">9 900 &#8381;</button>
+                </div>
+              </li>
+              <li class="card-block">
+                <img src="img/aplus-card.jpg" width="358" height="578" alt="Макет ленидинга курсов повышения квалификации А+">
+                <div class="hover-block">
+                  <a href="#"><h3 class="caption">a plus</h3></a>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <button type="button" class="btn btn-buy">9 900 &#8381;</button>
+                </div>
+              </li>
+              <li class="card-block">
+                <img src="img/kvast-card.jpg" width="358" height="578" alt="Макет промо-сайта прозиводителя крафтового кваса Кваст">
+                <div class="hover-block">
+                  <a href="#"><h3 class="caption">кваст</h3></a>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <button type="button" class="btn btn-buy">9 900 &#8381;</button>
+                </div>
+              </li>
+            </ul>
+            <nav class="page-navigation">
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="btn btn-pagination btn-active">1</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-pagination">2</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-pagination">3</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-pagination">Следующая</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контактные данные</h2>
         <address>
@@ -204,8 +214,10 @@
           <li class="social-page-fb"><a class="btn-social" href="#"><img src="img/fb-icon.svg" class="social-icon" width="12" height="22" alt="Nerds в Facebook"></a></li>
           <li class="social-page-insta"><a class="btn-social" href="#"><img src="img/insta-icon.svg" class="social-icon" width="21" height="21" alt="Nerds в Instagram"></a></li>
         </ul>
-        <p class="social-title">Давайте дружить, это выгодно!</p>
-        <p class="social-info">Скидка 10% для друзей из социальных сетей</p>
+        <div class="social-info-container">
+          <p class="social-title">Давайте дружить, это выгодно!</p>
+          <p class="social-info">Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </section>
     </footer>
   </body>
