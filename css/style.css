@@ -134,7 +134,14 @@ img {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  min-width: 437px
+}
+
+.site-navigation li {
+  margin-right: 45px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
 }
 
 .main-navigation a {
@@ -620,6 +627,7 @@ img {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 48px;
+
 }
 
 .sort-options {
