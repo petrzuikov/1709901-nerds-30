@@ -131,9 +131,14 @@ img {
   margin: 0 auto;
 }
 
+
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-navigation li {
@@ -497,8 +502,22 @@ img {
   padding-right: 44px;
   display: inline-block;
 }
+
 .footer-contacts {
   width: 100%;
+  position: relative;
+}
+
+.map-image {
+  width: 100%;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .footer-social {
@@ -627,7 +646,10 @@ img {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 48px;
+}
 
+.sort-block h3 {
+  margin: 0;
 }
 
 .sort-options {
@@ -638,8 +660,19 @@ img {
 
 .sort-list {
   display: flex;
-  margin-right: 47px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 4px;
   padding-left: 0;
+}
+
+.sort-list li {
+  margin-right: 25px;
+}
+
+.sort-list button {
+  padding: 0;
 }
 
 
@@ -706,6 +739,8 @@ img {
   display: inline-block;
   background-color: var(--basic-white);
   font-size: 0;
+
+  padding-top: 40px;
 }
 
 .card-block::before {
@@ -713,7 +748,7 @@ img {
   font-size: 17px;
   position: absolute;
   height: 40px;
-  top: -40px;
+  top: 0;
   left: 0;
   background-color: var(--catalog-grey);
   width: 100%;
@@ -833,6 +868,8 @@ li:last-child .btn-pagination {
 .btn-down,
 .btn-up {
   background: none;
+  padding: 0;
+  margin-left: 18px;
 }
 
 .btn-down:hover path,
