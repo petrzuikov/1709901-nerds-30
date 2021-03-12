@@ -436,6 +436,47 @@ img {
   line-height: 18px;   
 }
 
+.about {
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  display: inline-block;
+  width: 1158px;
+  height: 2px;
+  background-color: #EEEEEE;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.about::after {
+  content: "";
+  display: inline-block;
+  width: 1158px;
+  height: 2px;
+  background-color: #EEEEEE;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.companies {
+  position: relative;
+}
+
+.companies::after {
+  content: "";
+  display: inline-block;
+  width: 1158px;
+  height: 2px;
+  background-color: #EEEEEE;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .companies-item {
   position: relative;
 }
@@ -464,6 +505,7 @@ img {
   justify-self: center;
 }
 
+
 .companies-list a {
   display: flex;
   justify-content: center;
@@ -483,11 +525,9 @@ img {
   opacity: 0.1;
 }
 
-.companies {
-  margin-bottom: 80px;
-}
 
-.main-footer {
+.body .main-footer {
+  margin-top: 80px;
   padding-bottom: 68px;
 }
 
