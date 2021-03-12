@@ -23,7 +23,7 @@
           <li><a href="#">контакты</a></li>
         </ul>
         <ul class="cart">
-          <li><a class="cart-link" href="#"><img src="img/cart-icon.svg" width="15" height="11" alt="">КОРЗИНА</a></li>
+          <li><a class="cart-link" href="#">КОРЗИНА</a></li>
         </ul>
       </nav>
     </header>
@@ -39,61 +39,63 @@
           <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
             <fieldset class="cost">
               <legend class="caption">стоимость:</legend>
-              <input type="range" name="range" value="0" max="15000" class="field-range">
-              <label>
-                ОТ<input type="number" name="from" value="0" class="field-number">
-              </label>
-              <label>
-                ДО<input type="number" name="to" value="15 000" class="field-number">
-              </label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label>
+                    ОТ<input type="number" name="from" value="0" class="field-number">
+                  </label>
+                  <label>
+                    ДО<input type="number" name="to" value="15000" class="field-number">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="grid">
               <legend class="caption">сетка:</legend>
               <ul>
-                <li>
-                  <label>
-                    <input type="radio" name="radio" value="adaptive" class="field-radio" checked>Адаптивная
-                  </label>
+                <li class="filter-option">
+                  <input type="radio" name="radio" value="adaptive" id="adaptive-layout" class="filter-input-radio visually-hidden" checked>
+                  <label for="adaptive-layout">Адаптивная</label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="radio" value="fixed" class="field-radio">Фиксированная
-                  </label>
+                <li class="filter-option">
+                  <input type="radio" name="radio" value="fixed" id="fixed-layout" class="filter-input-radio visually-hidden">
+                  <label for="fixed-layout">Фиксированная</label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="radio" value="rubber" class="field-radio">Резиновая
-                  </label>
+                <li class="filter-option">
+                  <input type="radio" name="radio" value="rubber" id="rubber-layout" class="filter-input-radio visually-hidden">
+                  <label for="rubber-layout">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="features">
               <legend class="caption">особенности:</legend>
               <ul>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="slider" class="field-checkbox" checked>Слайдер
-                    </label>
+                  <li class="filter-option">
+                    <input type="checkbox" name="slider" id="slider" class="visually-hidden filter-input-checkbox" checked>
+                    <label for="slider">Слайдер</label>
                   </li>
-                  <li>
-                  <label>
-                    <input type="checkbox" name="features block" class="field-checkbox">Блок преимуществ
-                  </label>
+                  <li class="filter-option">
+                    <input type="checkbox" name="features block" id="features-block" class="visually-hidden filter-input-checkbox">
+                    <label for="features-block">Блок преимуществ</label>
                   </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="news" class="field-checkbox" Checked>Новости
-                    </label>
+                  <li class="filter-option">
+                    <input type="checkbox" name="news" id="news" class="visually-hidden filter-input-checkbox" Checked>
+                    <label for="news">Новости</label>
                   </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="gallery" class="field-checkbox">Галерея
-                    </label>
+                  <li class="filter-option">
+                    <input type="checkbox" name="gallery" id="gallery" class="visually-hidden filter-input-checkbox">
+                    <label for="gallery">Галерея</label>
                   </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="basket" class="field-checkbox">Корзина
-                    </label>
+                  <li class="filter-option">
+                    <input type="checkbox" name="basket" id="basket" class="visually-hidden filter-input-checkbox">
+                    <label for="basket">Корзина</label>
                   </li>
               </ul>
             </fieldset>
