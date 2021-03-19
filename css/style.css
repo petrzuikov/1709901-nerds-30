@@ -1462,7 +1462,7 @@ img {
   left: 0;
   background-color: var(--basic-light-grey);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   display: none;
 }
 
@@ -1485,7 +1485,8 @@ img {
   text-align: center;
   margin-bottom: 34px;
   min-height: 37px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 
@@ -1499,6 +1500,7 @@ img {
   display: block;
   width: 200px;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .btn-buy:hover {
