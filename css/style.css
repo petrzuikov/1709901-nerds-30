@@ -1425,8 +1425,8 @@ img {
 
 .card-block::before {
   content: '⬤ ⬤ ⬤';
-  font-size: 17px;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 3px;
   position: absolute;
   height: 40px;
   top: 0;
