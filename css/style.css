@@ -259,6 +259,7 @@ img {
   color: var(--basic-black);
 
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding-top: 71px;
 }
@@ -361,6 +362,8 @@ img {
   padding-left: 54px;
   padding-right: 54px;
   display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
 }
 
 .btn-slide:hover {
@@ -390,6 +393,10 @@ img {
 
 .services-list p {
   width: 260px;
+}
+
+.services-list a {
+  font-weight: 500;
 }
 
 .service-item::before {
@@ -436,6 +443,7 @@ img {
   padding-left: 39px;
   padding-right: 40px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .service-link-orange {
@@ -603,6 +611,7 @@ img {
 .about::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 1158px;
   height: 2px;
   background-color: var(--basic-light-grey);
@@ -614,6 +623,7 @@ img {
 .about::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 1158px;
   height: 2px;
   background-color: var(--basic-light-grey);
@@ -624,11 +634,13 @@ img {
 
 .companies {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .companies::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 1158px;
   height: 2px;
   background-color: var(--basic-light-grey);
@@ -644,6 +656,7 @@ img {
 .companies-item::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 2px;
   height: 52px;
   background-color: var(--basic-light-grey);
@@ -682,12 +695,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.companies-list a {
   opacity: 0.2;
 }
+
 
 .companies-list a:hover {
   opacity: 1;
@@ -717,7 +727,6 @@ img {
 }
 
 .body .main-footer {
-  margin-top: 65px;
   padding-bottom: 68px;
 }
 
@@ -759,6 +768,7 @@ img {
   text-transform: none;
   color: var(--basic-dark-grey);
   display: inline-block;
+  vertical-align: middle;
   margin-top: 2px;
 }
 
@@ -771,6 +781,8 @@ img {
   padding-left: 44px;
   padding-right: 44px;
   display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
 }
 
 .btn-contact:hover {
@@ -855,6 +867,7 @@ img {
   width: 81px;
   border-radius: 50%;
   display: inline-block;
+  vertical-align: middle;
 
   display: flex;
   justify-content: center;
@@ -891,6 +904,10 @@ img {
   transform: translate(-50%, -50%);
 
   display: none;
+}
+
+.contact-us-form label {
+  display: block;
 }
 
 .modal-close {
@@ -932,6 +949,8 @@ img {
   margin-top: 14px;
   background-color: var(--basic-orange);
   display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
 }
 
 
@@ -1347,6 +1366,7 @@ img {
   padding-left: 88px;
   padding-right: 89px;
   display: inline-block;
+  vertical-align: middle;
 
   color: var(--basic-black);
   font-weight: 500;
@@ -1373,7 +1393,8 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sort-list button:active {
+.sort-list button:active,
+.sort-list .sort-active-btn {
   color: var(--basic-black);
 }
 
@@ -1387,6 +1408,7 @@ img {
   position: relative;
 
   display: inline-block;
+  vertical-align: middle;
   background-color: var(--basic-white);
   font-size: 0;
 
@@ -1408,9 +1430,9 @@ img {
   position: absolute;
   height: 40px;
   top: 0;
-  left: 0;
+  left: -1px;
   background-color: var(--catalog-grey);
-  width: 100%;
+  width: calc(100% + 2px);
   padding: 5px;
   padding-top: 13px;
   padding-left: 16px;
@@ -1440,6 +1462,7 @@ img {
   left: 0;
   background-color: var(--basic-light-grey);
   font-size: 16px;
+  font-weight: 500;
   display: none;
 }
 
@@ -1461,6 +1484,8 @@ img {
   color: var(--basic-dark-grey);
   text-align: center;
   margin-bottom: 34px;
+  min-height: 37px;
+  overflow: auto;
 }
 
 
@@ -1507,6 +1532,7 @@ img {
   color: var(--basic-black);
   font-weight: 500;
   display: inline-block;
+  vertical-align: middle;
 }
 
 li:last-child .btn-pagination {
@@ -1521,6 +1547,7 @@ li:last-child .btn-pagination {
 .btn-pagination:active {
   background-color: var(--btn-show-active);
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .btn-active {
@@ -1545,7 +1572,8 @@ li:last-child .btn-pagination {
 }
 
 .btn-down:active path,
-.btn-up:active path{
+.btn-up:active path,
+.arrow-active-btn path {
   fill: var(--btn-up-down-active);
 }
 

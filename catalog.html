@@ -44,8 +44,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <button class="toggle toggle-min"></button>
-                  <button class="toggle toggle-max"></button>
+                  <button type="button" class="toggle toggle-min"></button>
+                  <button type="button" class="toggle toggle-max"></button>
                 </div>
                 <div class="price-controls">
                   <label>
@@ -109,7 +109,7 @@
             <div class="sort-options">
               <ul class="sort-list">
                 <li>
-                    <button type="button">По цене</button>
+                    <button class="sort-active-btn" type="button">По цене</button>
                 </li>
                 <li>
                     <button type="button">по типу</button>
@@ -118,7 +118,7 @@
                     <button type="button">по названию</button>
                 </li>
               </ul>
-              <button type="button" class="btn btn-down">
+              <button type="button" class="btn btn-down arrow-active-btn">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11" fill="rgba(166, 166, 166, 0.2)"/>
                 </svg>
@@ -245,5 +245,25 @@
         </div>
       </section>
     </footer>
+    <section class="contact-us">
+      <h2 class="visually-hidden">Форма для связи</h2>
+      <p class="contact-us-description">Напишите нам</p>
+      <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="name-container">
+          <label for="contact-us-name">Ваше имя:</label>
+          <input class="contact-us-name" id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="email-container"> 
+          <label for="contact-us-email">Ваш email:</label>
+          <input class="contact-us-email" id="contact-us-email" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="text-container">
+          <label for="contact-us-text">Текст письма:</label>
+          <textarea class="contact-us-text" id="contact-us-text" name="text" rows="6" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="btn btn-contact-us" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
