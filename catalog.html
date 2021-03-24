@@ -23,7 +23,7 @@
           <li><a href="#">контакты</a></li>
         </ul>
         <ul class="cart">
-          <li><a class="cart-link" href="#">КОРЗИНА</a></li>
+          <li><a class="cart-link" href="#">корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -49,10 +49,10 @@
                 </div>
                 <div class="price-controls">
                   <label>
-                    ОТ<input type="number" name="from" value="0" class="field-number">
+                    от<input type="number" name="from" value="0" class="field-number">
                   </label>
                   <label>
-                    ДО<input type="number" name="to" value="15000" class="field-number">
+                    до<input type="number" name="to" value="15000" class="field-number">
                   </label>
                 </div>
               </div>
@@ -118,12 +118,12 @@
                     <button type="button">по названию</button>
                 </li>
               </ul>
-              <button type="button" class="btn btn-down arrow-active-btn">
+              <button type="button" class="btn btn-down arrow-active-btn" aria-label="Стрелка вниз">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11" fill="rgba(166, 166, 166, 0.2)"/>
                 </svg>
               </button>
-              <button type="button" class="btn btn-up">
+              <button type="button" class="btn btn-up" aria-label="Стрелка вверх">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 0L0 10H11L5.5 0Z" fill="rgba(166, 166, 166, 0.2)"/>
                 </svg>
@@ -251,17 +251,17 @@
       <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="name-container">
           <label for="contact-us-name">Ваше имя:</label>
-          <input class="contact-us-name" id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="contact-us-name" id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </div>
         <div class="email-container"> 
           <label for="contact-us-email">Ваш email:</label>
-          <input class="contact-us-email" id="contact-us-email" type="email" name="email" placeholder="email@example.com">
+          <input class="contact-us-email" id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
         </div>
         <div class="text-container">
           <label for="contact-us-text">Текст письма:</label>
-          <textarea class="contact-us-text" id="contact-us-text" name="text" rows="6" placeholder="В свободной форме"></textarea>
+          <textarea class="contact-us-text" id="contact-us-text" name="text" rows="6" placeholder="В свободной форме" required></textarea>
         </div>
-        <button class="btn btn-contact-us" type="submit">Отправить</button>
+        <button class="btn btn-contact-us" type="submit" tabindex="1">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
